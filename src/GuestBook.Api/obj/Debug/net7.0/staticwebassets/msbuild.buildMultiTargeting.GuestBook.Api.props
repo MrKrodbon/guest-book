@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\GuestBook.Api.props" />
+</Project>
