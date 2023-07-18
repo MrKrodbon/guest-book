@@ -1,10 +1,23 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using GuestBook.Models.Requests;
+using GuestBook.Models.Responses;
+using Microsoft.AspNetCore.Mvc;
 
 namespace GuestBook.Api.Controller;
-public class GuestBookController : Controller
+
+[ApiController]
+[Route("api/[controller]")]
+public class GuestBookController : ControllerBase
 {
-    public IActionResult Index()
+
+    [HttpGet("comment")]
+    public async Task<IActionResult> GetAsync([FromQuery] GuestBookReadRequestModel readRequestModel)
     {
-        return View();
+        return Ok(new GuestBookResponseModel());
+    }
+
+    [HttpPost("comment")]
+    public async Task<IActionResult> PostAsync([FromBody] GuestBookCreateRequestModel createRequestModel)
+    {
+        return Ok(new GuestBookResponseModel());
     }
 }
