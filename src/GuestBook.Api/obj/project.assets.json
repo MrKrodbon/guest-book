@@ -88,6 +88,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "GuestBook.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/GuestBook.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GuestBook.Models.dll": {}
+        }
       }
     }
   },
@@ -420,10 +430,16 @@
         "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "GuestBook.Models/1.0.0": {
+      "type": "project",
+      "path": "../GuestBook.Models/GuestBook.Models.csproj",
+      "msbuildProject": "../GuestBook.Models/GuestBook.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "GuestBook.Models >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -454,7 +470,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Eugene\\Desktop\\MyProjects\\guest-book\\src\\GuestBook.Models\\GuestBook.Models.csproj": {
+              "projectPath": "C:\\Users\\Eugene\\Desktop\\MyProjects\\guest-book\\src\\GuestBook.Models\\GuestBook.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
