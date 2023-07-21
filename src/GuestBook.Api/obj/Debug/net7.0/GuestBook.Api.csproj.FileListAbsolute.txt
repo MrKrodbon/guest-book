@@ -30,3 +30,17 @@ C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBook.Api\obj\Debug\net7.0
 C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBook.Api\obj\Debug\net7.0\GuestBook.Api.pdb
 C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBook.Api\obj\Debug\net7.0\GuestBook.Api.genruntimeconfig.cache
 C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBook.Api\obj\Debug\net7.0\ref\GuestBook.Api.dll
+C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBook.Api\bin\Debug\net7.0\MassTransit.dll
+C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBook.Api\bin\Debug\net7.0\MassTransit.Abstractions.dll
+C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBook.Api\bin\Debug\net7.0\MassTransit.RabbitMqTransport.dll
+C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBook.Api\bin\Debug\net7.0\RabbitMQ.Client.dll
+C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBook.Api\bin\Debug\net7.0\GuestBook.Models.dll
+C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBook.Api\bin\Debug\net7.0\GuestBook.Models.pdb
+C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBook.Api\bin\Debug\net7.0\Humanizer.dll
+C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBook.Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBook.Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBook.Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBook.Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBook.Api\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBook.Api\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBook.Api\bin\Debug\net7.0\System.CodeDom.dll
