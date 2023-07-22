@@ -1,9 +1,9 @@
 ﻿using GuestBook.Models.Requests;
 using GuestBook.Models.Responses;
-using GuestBook.Service.Managers;
+using GuestBookService.Managers;
 using MassTransit;
 
-namespace GuestBook.Service.Consumers;
+namespace GuestBookService.Consumers;
 public class GuestBookGetConsumer : IConsumer<GuestBookReadRequestModel>
 {
     private readonly GuestBookManager _guestBookManager;
@@ -17,7 +17,7 @@ public class GuestBookGetConsumer : IConsumer<GuestBookReadRequestModel>
     {
         var responseModel = await _guestBookManager.ReadAsync(context.Message, cancellationToken: context.CancellationToken);
 
-        var searchResult = new GuestBookResponseModel()
+        var serachRequestResult = new GuestBookResponseModel()
         {
             // TODO: Прописати повертаючий документ для null значень SearchRequestResult
         };

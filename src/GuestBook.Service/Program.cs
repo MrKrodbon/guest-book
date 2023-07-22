@@ -1,18 +1,14 @@
-using GuestBookService;
-using GuestBookService.Consumers;
-using GuestBookService.Managers;
+using GuestBook.Service.Consumers;
 using MassTransit;
 using Microsoft.EntityFrameworkCore;
 
 IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices((hostContext, services) =>
     {
+        string connection = hostContext.Configuration.GetConnectionString("DefaultConnection");
 
-        var sqlConnection = Environment.GetEnvironmentVariable("DEFAULT_CONNECTION");
+        services.AddDbContext<GuestBook.Service.Data.GuestBookContext>(builder => builder.UseSqlServer(connection));
 
-        services.AddDbContext<GuestBookContext>(builder => builder.UseSqlServer(sqlConnection));
-
-        services.AddScoped<GuestBookManager>();
 
         services.AddMassTransit(x =>
         {
