@@ -1,14 +1,13 @@
 ﻿using GuestBook.Models.Requests;
 using GuestBook.Models.Responses;
-using GuestBook.Service.Data;
+using GuestBookService.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace GuestBook.Service.Managers;
+namespace GuestBookService.Managers;
 public class GuestBookManager
 {
-    private readonly GuestBookContext _guestBookContext;
-
-    public GuestBookManager(GuestBookContext guestBookContext)
+    private readonly GuestBookDbContext _guestBookContext;
+    public GuestBookManager(GuestBookDbContext guestBookContext)
     {
         _guestBookContext = guestBookContext;
     }
@@ -17,7 +16,7 @@ public class GuestBookManager
     {
         GuestBookResponseModel? guestBookResponseModel = null;
 
-        var searchRequestResult = await _guestBookContext.GuestBookEntities
+        var searchRequestResult = await _guestBookContext.GuestBookEntity
             .Where(s => s.Id == readRequestModel.Id)
             .SingleOrDefaultAsync(cancellationToken);
 

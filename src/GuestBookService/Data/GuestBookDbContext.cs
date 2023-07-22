@@ -1,14 +1,15 @@
-﻿using GuestBook.Service.Data.Entities;
+﻿using GuestBookService.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace GuestBook.Service.Data;
-public class GuestBookContext : DbContext
+namespace GuestBookService.Data;
+public class GuestBookDbContext : DbContext
 {
-    public GuestBookContext(DbContextOptions<GuestBookContext> options) : base(options)
+    public GuestBookDbContext(DbContextOptions<GuestBookDbContext> options) : base(options)
     {
+
     }
 
-    public DbSet<GuestBookEntity> GuestBookEntities { get; set; }
+    public DbSet<GuestBookEntity> GuestBookEntity { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
