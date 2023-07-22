@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  guestbook.api:
+    image: ${DOCKER_REGISTRY-}guestbookapi
+    build:
+      context: .
+      dockerfile: src/GuestBook.Api/Dockerfile
+  
+  guestbook.service:
+    image: ${DOCKER_REGISTRY-}guestbookservice
+    build:
+      context: .
+      dockerfile: src/GuestBookService/Dockerfile
