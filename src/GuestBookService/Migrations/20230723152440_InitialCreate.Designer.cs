@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GuestBookService.Migrations
 {
     [DbContext(typeof(GuestBookDbContext))]
-    [Migration("20230722131339_InitialCreate")]
+    [Migration("20230723152440_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

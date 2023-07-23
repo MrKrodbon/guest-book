@@ -18,6 +18,13 @@ IHost host = Host.CreateDefaultBuilder(args)
             x.AddConsumer<GuestBookGetConsumer>();
 
             x.AddConsumer<GuestBookPostConsumer>();
+
+            x.UsingRabbitMq((context, configurator) =>
+            {
+                configurator.Host("rabbitmq://rabbitmq");
+
+                configurator.ConfigureEndpoints(context);
+            });
         });
 
     })
