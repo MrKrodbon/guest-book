@@ -1,12 +1,11 @@
 ﻿using GuestBookService.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace GuestBookService.Data;
+namespace GuestBook.Api;
 public class GuestBookDbContext : DbContext
 {
     public GuestBookDbContext(DbContextOptions<GuestBookDbContext> options) : base(options)
     {
-
     }
 
     public DbSet<GuestBookEntity> GuestBookEntity { get; set; }
@@ -23,7 +22,7 @@ public class GuestBookDbContext : DbContext
 
         modelBuilder.Entity<GuestBookEntity>()
             .Property(b => b.Comment)
-            .HasMaxLength(147)
+            .HasMaxLength(140)
             .IsRequired();
     }
 }

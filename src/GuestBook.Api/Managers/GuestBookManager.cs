@@ -1,13 +1,12 @@
 ﻿using GuestBook.Models.Requests;
 using GuestBook.Models.Responses;
-using GuestBookService.Data;
 using GuestBookService.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace GuestBookService.Managers;
+namespace GuestBook.Api;
 public class GuestBookManager
 {
-    private readonly GuestBookDbContext _guestBookContext;
+    private GuestBookDbContext _guestBookContext;
     public GuestBookManager(GuestBookDbContext guestBookContext)
     {
         _guestBookContext = guestBookContext;
@@ -37,23 +36,25 @@ public class GuestBookManager
 
     public async Task<GuestBookResponseModel> CreateAsync(GuestBookCreateRequestModel createRequestModel, CancellationToken cancellationToken)
     {
-        GuestBookEntity guestBookEntity = new GuestBookEntity()
+        GuestBookEntity newGuestBookEntity = new GuestBookEntity()
         {
             GuestName = createRequestModel.GuestName,
             Comment = createRequestModel.Comment,
             CommentDate = createRequestModel.CommentDate
         };
 
-        await _guestBookContext.AddAsync(guestBookEntity, cancellationToken);
+        await _guestBookContext.GuestBookEntity.AddAsync(entity: newGuestBookEntity, cancellationToken: cancellationToken);
 
-        await _guestBookContext.SaveChangesAsync(cancellationToken);
 
-        return new GuestBookResponseModel()
+        GuestBookResponseModel guestBookResponseModel = new GuestBookResponseModel()
         {
-            Id = guestBookEntity.Id,
-            GuestName = guestBookEntity.GuestName,
-            Comment = guestBookEntity.Comment,
-            CommentDate = guestBookEntity.CommentDate
+            GuestName = newGuestBookEntity.GuestName,
+            Comment = newGuestBookEntity.Comment,
+            CommentDate = newGuestBookEntity.CommentDate
         };
+
+        _guestBookContext.SaveChanges();
+
+        return guestBookResponseModel;
     }
 }
