@@ -16,7 +16,18 @@ public class GuestBookController : BaseController
     [HttpGet("comment")]
     public async Task<IActionResult> GetAsync([FromQuery] GuestBookReadRequestModel readRequestModel)
     {
-        return Ok(new GuestBookResponseModel());
+
+        var response = await ResponseAsync<GuestBookReadRequestModel, SearchRequestResultModel>(readRequestModel);
+
+        if (response.ResponseModel != null)
+        {
+            return Ok(response.ResponseModel);
+        }
+        else
+        {
+            return NotFound();
+        }
+
     }
 
     [HttpPost("comment")]

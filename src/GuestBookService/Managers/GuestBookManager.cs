@@ -35,7 +35,7 @@ public class GuestBookManager
         return guestBookResponseModel;
     }
 
-    public async Task<GuestBookResponseModel?> CreateAsync(GuestBookCreateRequestModel createRequestModel, CancellationToken cancellationToken)
+    public async Task<GuestBookResponseModel> CreateAsync(GuestBookCreateRequestModel createRequestModel, CancellationToken cancellationToken)
     {
         GuestBookEntity guestBookEntity = new GuestBookEntity()
         {

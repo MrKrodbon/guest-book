@@ -23,7 +23,7 @@ public class GuestBookDbContext : DbContext
 
         modelBuilder.Entity<GuestBookEntity>()
             .Property(b => b.Comment)
-            .HasMaxLength(140)
+            .HasMaxLength(147)
             .IsRequired();
     }
 }
