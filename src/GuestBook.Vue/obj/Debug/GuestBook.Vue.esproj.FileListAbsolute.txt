@@ -1,2 +1,0 @@
-C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBook.Vue\obj\Debug\GuestBook.Vue.esproj.SuggestedBindingRedirects.cache
-C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBook.Vue\obj\Debug\GuestBook.Vue.esproj.CoreCompileInputs.cache
