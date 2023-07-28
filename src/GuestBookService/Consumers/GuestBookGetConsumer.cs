@@ -17,9 +17,11 @@ public class GuestBookGetConsumer : IConsumer<GuestBookReadRequestModel>
     {
         var responseModel = await _guestBookManager.ReadAsync(context.Message, cancellationToken: context.CancellationToken);
 
-        var serachRequestResult = new GuestBookResponseModel()
+        var serachRequestResult = new SearchRequestResultModel()
         {
-            // TODO: Прописати повертаючий документ для null значень SearchRequestResult
+            ResponseModel = responseModel
         };
+
+        await context.RespondAsync<SearchRequestResultModel>(serachRequestResult);
     }
 }

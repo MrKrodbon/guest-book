@@ -7,5 +7,5 @@ using System.Threading.Tasks;
 namespace GuestBook.Models.Responses;
 public class SearchRequestResultModel
 {
-    GuestBookResponseModel? responseModel { get; set; }
+    public GuestBookResponseModel? ResponseModel { get; set; }
 }

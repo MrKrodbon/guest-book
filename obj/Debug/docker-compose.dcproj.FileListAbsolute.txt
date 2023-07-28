@@ -16,7 +16,6 @@ C:\Users\Eugene\Desktop\MyProjects\guest-book\bin\Debug\Microsoft.Extensions.Dep
 C:\Users\Eugene\Desktop\MyProjects\guest-book\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Eugene\Desktop\MyProjects\guest-book\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.dll
 C:\Users\Eugene\Desktop\MyProjects\guest-book\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\Eugene\Desktop\MyProjects\guest-book\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Eugene\Desktop\MyProjects\guest-book\bin\Debug\MassTransit.Abstractions.dll
 C:\Users\Eugene\Desktop\MyProjects\guest-book\bin\Debug\Microsoft.EntityFrameworkCore.dll
 C:\Users\Eugene\Desktop\MyProjects\guest-book\bin\Debug\Microsoft.Extensions.Hosting.dll
@@ -57,3 +56,6 @@ C:\Users\Eugene\Desktop\MyProjects\guest-book\bin\Debug\GuestBook.Models.pdb
 C:\Users\Eugene\Desktop\MyProjects\guest-book\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\Users\Eugene\Desktop\MyProjects\guest-book\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Users\Eugene\Desktop\MyProjects\guest-book\obj\Debug\docker-compose.dcproj.CopyComplete
+C:\Users\Eugene\Desktop\MyProjects\guest-book\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Eugene\Desktop\MyProjects\guest-book\bin\Debug\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\Eugene\Desktop\MyProjects\guest-book\bin\Debug\Microsoft.Extensions.Diagnostics.HealthChecks.dll

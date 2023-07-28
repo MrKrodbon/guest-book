@@ -18,6 +18,8 @@ public class GuestBookPostConsumer : IConsumer<GuestBookCreateRequestModel>
     }
     public async Task Consume(ConsumeContext<GuestBookCreateRequestModel> context)
     {
-        // TODO: Прописати створення запису з повертаючим об'єктом в рази путсого значення (якщо треба)
+        var result = await _guestBookManager.CreateAsync(context.Message, context.CancellationToken);
+
+        await context.RespondAsync(result);
     }
 }
