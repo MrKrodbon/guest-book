@@ -96,3 +96,5 @@ C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBookService\bin\Debug\net
 C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBookService\bin\Debug\net7.0\MassTransit.Abstractions.dll
 C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBookService\bin\Debug\net7.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
 C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBookService\bin\Debug\net7.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBookService\bin\Debug\net7.0\MassTransit.RabbitMqTransport.dll
+C:\Users\Eugene\Desktop\MyProjects\guest-book\src\GuestBookService\bin\Debug\net7.0\RabbitMQ.Client.dll

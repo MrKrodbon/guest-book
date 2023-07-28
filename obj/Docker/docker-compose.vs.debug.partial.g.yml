@@ -30,7 +30,7 @@ services:
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
   guestbook.service:
-    image: guestbookservice:dev
+    image: guestbook.service:dev
     container_name: GuestBookService
     build:
       target: base
