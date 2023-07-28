@@ -1,17 +1,25 @@
 <template>
     <div class="container">
-        <img src="../assets/background.jpg" class="backgorund-image" />
         <div class="comment">
-            <button v-if="!isFormActive" @click="isFormActive = true" class="button-success">
-                Add new comment
-            </button>
-            <template ></template>
-            <h3 v-else>New comment</h3>
+           {{commentItem}}
         </div>
 
     </div>
    
 </template>
+
+<script>
+    export default {
+        props: {
+            commentItem: {
+                type: Object,
+                required: true
+            }
+        }
+    }
+
+
+</script>>
 
 <style>
     .container {
@@ -29,10 +37,6 @@
         border-radius: 0.5rem;
         padding: 0.5rem;
     }
-    .backgorund-image {
-        flex: 1;
-        max-width: 900px;
-        height: 100%;
-        
-    }
+    
+    
 </style>
