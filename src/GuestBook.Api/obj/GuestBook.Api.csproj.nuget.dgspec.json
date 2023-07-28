@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eugene\\Desktop\\MyProjects\\guest-book\\src\\GuestBook.Api\\GuestBook.Api.csproj": {}
+    "D:\\Нова папка (2)\\guest-book\\src\\GuestBook.Api\\GuestBook.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eugene\\Desktop\\MyProjects\\guest-book\\src\\GuestBook.Api\\GuestBook.Api.csproj": {
+    "D:\\Нова папка (2)\\guest-book\\src\\GuestBook.Api\\GuestBook.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eugene\\Desktop\\MyProjects\\guest-book\\src\\GuestBook.Api\\GuestBook.Api.csproj",
+        "projectUniqueName": "D:\\Нова папка (2)\\guest-book\\src\\GuestBook.Api\\GuestBook.Api.csproj",
         "projectName": "GuestBook.Api",
-        "projectPath": "C:\\Users\\Eugene\\Desktop\\MyProjects\\guest-book\\src\\GuestBook.Api\\GuestBook.Api.csproj",
-        "packagesPath": "C:\\Users\\Eugene\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eugene\\Desktop\\MyProjects\\guest-book\\src\\GuestBook.Api\\obj\\",
+        "projectPath": "D:\\Нова папка (2)\\guest-book\\src\\GuestBook.Api\\GuestBook.Api.csproj",
+        "packagesPath": "C:\\Users\\Евгеній\\.nuget\\packages\\",
+        "outputPath": "D:\\Нова папка (2)\\guest-book\\src\\GuestBook.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Eugene\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Евгеній\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,15 +22,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Eugene\\Desktop\\MyProjects\\guest-book\\src\\GuestBook.Models\\GuestBook.Models.csproj": {
-                "projectPath": "C:\\Users\\Eugene\\Desktop\\MyProjects\\guest-book\\src\\GuestBook.Models\\GuestBook.Models.csproj"
+              "D:\\Нова папка (2)\\guest-book\\src\\GuestBook.Models\\GuestBook.Models.csproj": {
+                "projectPath": "D:\\Нова папка (2)\\guest-book\\src\\GuestBook.Models\\GuestBook.Models.csproj"
               }
             }
           }
@@ -91,21 +91,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Eugene\\Desktop\\MyProjects\\guest-book\\src\\GuestBook.Models\\GuestBook.Models.csproj": {
+    "D:\\Нова папка (2)\\guest-book\\src\\GuestBook.Models\\GuestBook.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eugene\\Desktop\\MyProjects\\guest-book\\src\\GuestBook.Models\\GuestBook.Models.csproj",
+        "projectUniqueName": "D:\\Нова папка (2)\\guest-book\\src\\GuestBook.Models\\GuestBook.Models.csproj",
         "projectName": "GuestBook.Models",
-        "projectPath": "C:\\Users\\Eugene\\Desktop\\MyProjects\\guest-book\\src\\GuestBook.Models\\GuestBook.Models.csproj",
-        "packagesPath": "C:\\Users\\Eugene\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eugene\\Desktop\\MyProjects\\guest-book\\src\\GuestBook.Models\\obj\\",
+        "projectPath": "D:\\Нова папка (2)\\guest-book\\src\\GuestBook.Models\\GuestBook.Models.csproj",
+        "packagesPath": "C:\\Users\\Евгеній\\.nuget\\packages\\",
+        "outputPath": "D:\\Нова папка (2)\\guest-book\\src\\GuestBook.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Eugene\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Евгеній\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -146,7 +146,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

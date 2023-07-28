@@ -8,6 +8,7 @@ namespace GuestBookService.Managers;
 public class GuestBookManager
 {
     private readonly GuestBookDbContext _guestBookContext;
+
     public GuestBookManager(GuestBookDbContext guestBookContext)
     {
         _guestBookContext = guestBookContext;

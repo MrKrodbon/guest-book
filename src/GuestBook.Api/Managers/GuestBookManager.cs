@@ -7,6 +7,7 @@ namespace GuestBook.Api;
 public class GuestBookManager
 {
     private GuestBookDbContext _guestBookContext;
+
     public GuestBookManager(GuestBookDbContext guestBookContext)
     {
         _guestBookContext = guestBookContext;
@@ -44,7 +45,6 @@ public class GuestBookManager
         };
 
         await _guestBookContext.GuestBookEntity.AddAsync(entity: newGuestBookEntity, cancellationToken: cancellationToken);
-
 
         GuestBookResponseModel guestBookResponseModel = new GuestBookResponseModel()
         {
