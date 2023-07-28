@@ -25,13 +25,9 @@
 
   <ItemGroup>
 	<ProjectReference Include="..\GuestBook.Models\GuestBook.Models.csproj" />
-	  <ProjectReference Include="..\GuestBook.Vue\GuestBook.Vue.esproj" >
+	  <ProjectReference Include="..\GuestBook.Vue\GuestBook.Vue.esproj">
 		  <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
 	  </ProjectReference>
-  </ItemGroup>
-
-  <ItemGroup>
-	<Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>

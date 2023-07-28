@@ -6,7 +6,8 @@ builder.Services.AddControllers();
 
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddMassTransit(x => {
+builder.Services.AddMassTransit(x =>
+{
 
     x.UsingRabbitMq((context, configurator) =>
     {
@@ -22,9 +23,9 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
 
-    //app.UseSwagger();
+    app.UseSwagger();
 
-    //app.UseSwaggerUI();
+    app.UseSwaggerUI();
 }
 else
 {
