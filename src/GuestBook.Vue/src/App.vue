@@ -1,11 +1,11 @@
 <template>
     <div id="app">
         <h1>Guest Book</h1>
-        <AddComment>
-            @add-comment:"addComment"
-        </AddComment>
-        <GuestBookHeading />
+        <AddComment v-for="comment in comments"
+                    :comment="comment"
+                    :key="comment.id" />
         <GuestBookCommentsList v-bind:commentsList="comments" />
+        @addComment="addComment"
     </div>
 </template>
 
@@ -13,29 +13,38 @@
 <script>
     import GuestBookCommentsList from '@/components/GuestBookCommentsList'
     import AddComment from '@/components/AddComment'
-
-    const API_URL = "https://localhost:5000/";
     export default {
         name: 'App',
         data() {
             return {
+                loading: true,
                 comments: []
             }
         },
         methods: {
-            async refreshData() {
-                axios.get(API_URL +"api/GuestBook/comment?Id=1").then(
-                    (response) => {
-                        this.comments = response.data;
-                    }
-                )
-            }
             addComment(comment) {
-                this.comments.push(comment)
+                fetch('/api/comments',
+                    {
+                        method: 'POST',
+                        headers: {
+                            'content-type': 'application/json'
+                        },
+                        body: JSON.stringify(comment)
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.id !== undefined) this.comments.push(data)
+                    })
             }
         },
-        mounted: function () {
-            this.refreshData();
+        mounted: {
+            fetch('/api/comments')
+                .then(response => response.json())
+                .then(data => {
+                    this.comments = data
+                    this.loading = false
+                })
+            
         },
         components: {
             GuestBookCommentsList,
