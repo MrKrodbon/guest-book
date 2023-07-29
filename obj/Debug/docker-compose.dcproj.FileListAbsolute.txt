@@ -57,5 +57,3 @@ C:\Users\Eugene\Desktop\MyProjects\guest-book\obj\Debug\docker-compose.dcproj.As
 C:\Users\Eugene\Desktop\MyProjects\guest-book\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Users\Eugene\Desktop\MyProjects\guest-book\obj\Debug\docker-compose.dcproj.CopyComplete
 C:\Users\Eugene\Desktop\MyProjects\guest-book\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Eugene\Desktop\MyProjects\guest-book\bin\Debug\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
-C:\Users\Eugene\Desktop\MyProjects\guest-book\bin\Debug\Microsoft.Extensions.Diagnostics.HealthChecks.dll

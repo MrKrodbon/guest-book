@@ -1,9 +1,15 @@
-﻿namespace GuestBook.Models.Requests;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace GuestBook.Models.Requests;
 public class GuestBookCreateRequestModel
 {
-    public string GuestName { get; set; }
-
-    public string Comment { get; set; }
+    [Required]
+    [StringLength(128)]
+    public string? GuestName { get; set; }
+    
+    [Required]
+    [StringLength(147)]
+    public string? Comment { get; set; }
 
     public DateTime CommentDate { get; set; }
 }

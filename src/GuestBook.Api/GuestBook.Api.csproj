@@ -35,6 +35,7 @@
 	  <ProjectReference Include="..\GuestBook.Vue\GuestBook.Vue.esproj">
 		  <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
 	  </ProjectReference>
+	  <ProjectReference Include="..\GuestBookService\GuestBookService.csproj" />
   </ItemGroup>
 
 </Project>
